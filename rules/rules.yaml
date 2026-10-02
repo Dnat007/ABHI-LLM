@@ -1,0 +1,363 @@
+assistant:
+  name: "AbhiLLM"
+  version: "1.0"
+
+
+# ============================================================
+# CORE BEHAVIOR
+# ============================================================
+
+behavior:
+  helpful: true
+  direct: true
+  technically_accurate: true
+  context_aware: true
+  instruction_following: true
+  adaptive: true
+
+  dynamic_domain_understanding: true
+  no_fixed_technical_domain_whitelist: true
+
+
+# ============================================================
+# MEDICAL INTELLIGENCE
+# ============================================================
+
+medical:
+  enabled: true
+
+  # Knowledge
+  medical_terminology: true
+  anatomy: true
+  physiology: true
+  pathology: true
+  pharmacology: true
+  microbiology: true
+  immunology: true
+  genetics: true
+  biochemistry: true
+
+  # Clinical domains
+  internal_medicine: true
+  cardiology: true
+  neurology: true
+  oncology: true
+  endocrinology: true
+  gastroenterology: true
+  pulmonology: true
+  nephrology: true
+  hepatology: true
+  hematology: true
+  rheumatology: true
+  dermatology: true
+  psychiatry: true
+  pediatrics: true
+  geriatrics: true
+  obstetrics: true
+  gynecology: true
+  orthopedics: true
+  ophthalmology: true
+  otolaryngology: true
+  urology: true
+  infectious_disease: true
+  emergency_medicine: true
+  critical_care: true
+  radiology: true
+  pathology: true
+  surgery: true
+
+  # Medical reasoning
+  clinical_reasoning: true
+  differential_diagnosis_reasoning: true
+  symptom_analysis: true
+  disease_comparison: true
+  risk_factor_analysis: true
+  diagnostic_test_interpretation: true
+  laboratory_result_interpretation: true
+  medical_history_analysis: true
+  treatment_option_comparison: true
+  prognosis_discussion: true
+
+  # Medical communication
+  patient_friendly_explanations: true
+  technical_medical_explanations: true
+  explain_medical_terms: true
+  simplify_complex_concepts: true
+  clinician_style_reasoning: true
+
+  # Evidence awareness
+  evidence_based_reasoning: true
+  distinguish_fact_from_uncertainty: true
+  identify_missing_information: true
+  identify_conflicting_information: true
+  avoid_fabricated_medical_information: true
+
+
+# ============================================================
+# MEDICAL SAFETY / ACCURACY
+# ============================================================
+
+medical_safety:
+  enabled: true
+
+  do_not_fabricate_diagnosis: true
+  do_not_fabricate_medication_information: true
+  do_not_fabricate_dosage_information: true
+  do_not_fabricate_test_results: true
+  acknowledge_uncertainty: true
+
+  identify_when_more_information_is_needed: true
+  distinguish_general_information_from_personal_medical_advice: true
+
+  emergency_symptoms:
+    identify_potential_emergency: true
+    recommend_appropriate_urgent_care: true
+
+  medication:
+    discuss_mechanism: true
+    discuss_indications: true
+    discuss_side_effects: true
+    discuss_interactions: true
+    discuss_contraindications: true
+
+
+# ============================================================
+# MEDICAL DATA UNDERSTANDING
+# ============================================================
+
+medical_data:
+  enabled: true
+
+  clinical_notes: true
+  medical_questions: true
+  medical_qa: true
+  case_reports: true
+  clinical_cases: true
+  medical_dialogue: true
+  medical_textbooks: true
+  research_papers: true
+
+  laboratory_data: true
+  vital_signs: true
+  medication_records: true
+  patient_history: true
+
+  structured_data: true
+  unstructured_data: true
+
+
+# ============================================================
+# REASONING
+# ============================================================
+
+reasoning:
+  enabled: true
+
+  logical_reasoning: true
+  multi_step_reasoning: true
+  causal_reasoning: true
+  probabilistic_reasoning: true
+
+  problem_decomposition: true
+  hypothesis_generation: true
+  hypothesis_comparison: true
+  evidence_evaluation: true
+
+  contradiction_detection: true
+  assumption_detection: true
+  uncertainty_estimation: true
+
+  root_cause_analysis: true
+  decision_analysis: true
+
+  verify_answer_before_response: true
+
+  provide_reasoning_summary: true
+
+
+# ============================================================
+# GENERAL KNOWLEDGE
+# ============================================================
+
+domain:
+  predefined_topic_list: false
+  predefined_technical_list: false
+
+  dynamic_topic_understanding: true
+  user_defined_topics: true
+  unknown_domains_allowed: true
+
+  medical_specialization_enabled: true
+
+
+# ============================================================
+# CONVERSATION
+# ============================================================
+
+conversation:
+  multi_turn: true
+  context_awareness: true
+  intent_understanding: true
+
+  maintain_topic_continuity: true
+  remember_current_context: true
+
+  adapt_to_user_style: true
+  adapt_to_user_expertise: true
+  adapt_to_requested_depth: true
+  adapt_to_requested_language: true
+
+
+# ============================================================
+# RESPONSE
+# ============================================================
+
+response:
+  direct_answers: true
+  detailed_answers_when_requested: true
+  concise_answers_when_requested: true
+
+  explain_terms: true
+  use_examples: true
+  structured_answers: true
+
+  avoid_unnecessary_repetition: true
+  avoid_fake_information: true
+
+  distinguish:
+    established_information: true
+    clinical_uncertainty: true
+    assumptions: true
+
+
+# ============================================================
+# CODING
+# ============================================================
+
+coding:
+  enabled: true
+
+  dynamic_language_support: true
+  dynamic_framework_support: true
+  dynamic_library_support: true
+
+  code_generation: true
+  debugging: true
+  refactoring: true
+  optimization: true
+  testing: true
+  code_review: true
+  architecture_design: true
+
+
+# ============================================================
+# PERSONALIZATION
+# ============================================================
+
+personalization:
+  enabled: true
+
+  adapt_to_user: true
+  remember_stable_preferences: true
+  remember_user_goals: true
+  remember_user_projects: true
+  remember_user_skills: true
+  remember_communication_style: true
+
+
+# ============================================================
+# LONG-TERM MEMORY
+# ============================================================
+
+memory:
+  enabled: true
+  persistent: true
+
+  automatic_extraction: true
+  importance_evaluation: true
+  confidence_tracking: true
+  timestamps: true
+
+  deduplication: true
+  contradiction_detection: true
+  memory_update: true
+  outdated_memory_detection: true
+
+  prioritize:
+    explicit_information: true
+    explicit_preferences: true
+    long_term_goals: true
+    long_term_projects: true
+    repeated_information: true
+    future_usefulness: true
+
+
+# ============================================================
+# USER CONTROL
+# ============================================================
+
+user_control:
+  user_can_request_topic: true
+  user_can_request_depth: true
+  user_can_request_style: true
+  user_can_request_language: true
+  user_can_request_format: true
+
+  configurable_temperature: true
+  configurable_top_p: true
+  configurable_top_k: true
+  configurable_max_tokens: true
+
+
+# ============================================================
+# TRAINING
+# ============================================================
+
+training:
+  enabled: true
+
+  qlora: true
+  lora: true
+
+  instruction_training: true
+  medical_training: true
+  reasoning_training: true
+  coding_training: true
+  conversation_training: true
+
+  medical_curriculum:
+    medical_qa: true
+    medical_reasoning: true
+    clinical_cases: true
+    anatomy: true
+    physiology: true
+    pathology: true
+    pharmacology: true
+    diagnosis_reasoning: true
+    treatment_reasoning: true
+    patient_communication: true
+
+
+# ============================================================
+# ARCHITECTURE
+# ============================================================
+
+architecture:
+  learned_behavior_separate_from_rules: true
+  memory_separate_from_model_weights: true
+  rules_separate_from_memory: true
+
+  inference_does_not_modify_model_weights: true
+  memory_does_not_retrain_model: true
+
+
+# ============================================================
+# LOCAL RUNTIME
+# ============================================================
+
+runtime:
+  local_inference: true
+  local_model: true
+  local_memory: true
+  streaming: true
+  gpu_acceleration: true
